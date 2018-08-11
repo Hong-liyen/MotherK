@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>退換貨規則</title>
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+
+</head>
+
+<body>
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">會員登入</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label>信箱</label>
+                                <input class="form-control" data-toggle="tooltip" title="請輸入信箱" placeholder="請輸入信箱">
+                            </div>
+                            <div class="form-group">
+                                <label>訂單編號</label>
+                                <input class="form-control" data-toggle="tooltip" title="請輸入訂單編號" placeholder="請輸入訂單編號">
+                            </div>
+                            <div class="form-group imgcode">
+                                <label>驗證碼</label>
+                                <div>
+                                    <input class="form-control" data-toggle="tooltip" title="請輸入驗證碼" placeholder="請輸入驗證碼">
+                                    <img src="images/imgcode.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check">
+                                    <label class="form-check-label" for="check">
+                                        記住登入資訊   
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-info">
+                                <button type="button" class="btn btn-primary btn-md btn-block">會員登入</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <header id="header">
+        <div class="container">
+            <div class="top">
+                <a href=""  data-toggle="modal" data-target="#myModal">登入</a>
+                <a href="memberjoin.html">加入會員</a>
+                <a href="">
+                    <img src="images/line.png" alt="" srcset="">
+                </a>
+                <a href="">
+                    <img src="images/korea.png" alt="" srcset="">
+                </a>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="" srcset="">
+                </a>
+            </div>
+        </div>
+      
+        <div class="menu">
+            <div class="container">
+                <div class="left">
+                    <div class="icon-menu">
+                        <div class="list">
+                            <a href="news.html">最新消息與活動</a>
+                            <a href="product.html">商品內容</a>
+                            <a href="video.html">使用分享與影片</a>
+                            <a href="about.html">關於我們</a>
+                            <a href="contact.html">聯絡我們</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="right">
+                    <div class="cart">
+                        <div class="icon-cart">
+                            <span>0</span>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <div class="icon-search">
+                            <input type="text" placeholder="搜尋">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="account">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 left">
+                    <div class="panel-group" id="accordionMenu" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-success">
+                            <div class="panel-heading" role="tab" id="headingOne" data-toggle="collapse" href="#collapseOne">
+                                <h4 class="panel-title">
+                                    <a role="button" data-parent="#accordionMenu" aria-expanded="true" aria-controls="collapseOne">
+                                        會員專區
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <ul class="nav">
+                                        <li>
+                                            <a href="#">訂單查詢</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">訊息管理中心</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">修改密碼/會員資料</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">紅利點數查詢</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">優惠代碼</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-success">
+                            <div class="panel-heading" role="tab" id="headingTwo" data-toggle="collapse" href="#collapseTwo" data-parent="#accordionMenu">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                        會員權益
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <ul class="nav">
+                                        <li>
+                                            <a href="account.html">購物須知</a>
+                                        </li>
+                                        <li>
+                                            <a href="rule.html">退換貨規則</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">常見問題</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">隱私權政策</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 right">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default" id="collapseOne_container">
+                            <div class="panel-heading" role="tab" id="headingThree" href="#collapseThree" data-toggle="collapse" data-parent="#accordion">
+                                <h4 class="panel-title">
+                                    <a role="button" aria-expanded="true" aria-controls="collapseThree">
+                                        退貨商品
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <ol>
+                                        <li>若非商品瑕疵，商品經拆封、髒汙毀損、已使用等因素，恕無法退換貨。 </li>
+                                        <li>退貨商品需為全新狀態，連同標籤及完整包裝，由MOTHER-K指定之貨運人員到府取回，如商品未妥善裝箱致運送毀損，將無法受理退換貨事宜。</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default" id="collapseTwo_Container">
+                            <div class="panel-heading" role="tab" id="headingFour" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" aria-expanded="false" aria-controls="collapseFour">
+                                        退貨流程
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">
+                                    <ol>
+                                        <li>以電話聯繫客服人員確認退貨資訊</li>
+                                        <li>貨運人員將完整包裝之退貨品取回</li>
+                                        <li>取件後 7 天內客服人員回覆是否退貨成功 </li>
+                                        <li>7~14天內將款項退至客戶紅利或帳戶中</li>
+                                    </ol>
+                                    <p>
+                                        如未事先聯繫即自行寄回退貨商品，或逾期寄回退貨商品，MOTHER-K將無法受理您的退貨退款，若退貨商品需再寄回給您，請自行負擔寄回運費。 </p>
+                                    <p>
+                                        因信件可能造成遺漏或信件往返時效性影響客戶退換貨權益，退換貨事宜請以免付費客服專線與客服人員聯繫處理。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default" id="collapseThree_Container">
+                            <div class="panel-heading" role="tab" id="headingFive" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" aria-expanded="false" aria-controls="collapseFive">
+                                        可以只申請部份退貨嗎？
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                    <p>除瑕疵品外，所有訂單必須所有貨品一起退貨，不可更換或退單一產品。</p>
+                                    <p>同筆訂單如申請第二次以上退貨，需要由買家自行負擔寄回運費。</p>
+                                    <p class="red">※提醒您：超過7日鑑賞期，一律無法受理退貨。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default" id="collapseThree_Container">
+                            <div class="panel-heading" role="tab" id="headingSix" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" aria-expanded="false" aria-controls="collapseSix">
+                                        七天鑑賞期定義
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                <div class="panel-body">
+                                    <p>七天鑑賞期為收到商品起算七天內，如12/5收到商品，則需於12/11前與 客服人員聯繫確認退貨事宜。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default" id="collapseThree_Container">
+                            <div class="panel-heading" role="tab" id="headingSeven" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" aria-expanded="false" aria-controls="collapseSeven">
+                                        其它注意事項
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                                <div class="panel-body">
+                                    <ol>
+                                        <li>如因個人因素退貨次數過多，MOTHER-K將依服務條款暫停、或終止您全 部或部份的購物與服務資格，不便之處敬請見諒。</li>
+                                        <li>商品退回後，若不符合訂購時滿額贈、滿額免運資格，需連同贈品、運費、 及該優惠一併退回，如滿額免運扣除退貨商品後未達免運標準，則退款將 扣回該筆訂單運費。</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="top">
+                <a href="account.html">購物須知</a>
+                <a href="rule.html">退換貨規則</a>
+                <a href="question.html">常見問題</a>
+                <a href="privacy.html">隱私權政策</a>
+            </div>
+            <div class="center">
+                <div class="left">SERVICE</div>
+                <div class="right">
+                    <div>
+                        <b>E-MAIL :</b>service@motherk.com.tw</div>
+                    <div>
+                        <b>FREE TEL :</b> 0800-500-522 (週一~週五9:30~12:00 / 13:00~17:30)</div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                Copyright © 2016 MOTHER-K Taiwan All rights reserved.
+            </div>
+        </div>
+
+    </footer>
+    <div class="arrow">▲
+    </div>
+    <div class="social">
+        <ul>
+            <li class="icon-facebook blue">
+                <a href="#"></a>
+            </li>
+            <li class="green">
+                <a href="#">
+                    <img src="images/line.png" alt="" srcset="">
+                </a>
+            </li>
+            <li class="icon-mail4 orange">
+                <a href="contact.html"></a>
+            </li>
+            <li class="icon-heart purple">
+                <a href="#"></a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="js/jquery-2.1.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.js" type="text/javascript"></script>
+<script src="js/script.js"></script>
+
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+       <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">會員登入</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label>信箱</label>
+                                <input class="form-control" data-toggle="tooltip" title="請輸入信箱" placeholder="請輸入信箱">
+                            </div>
+                            <div class="form-group">
+                                <label>訂單編號</label>
+                                <input class="form-control" data-toggle="tooltip" title="請輸入訂單編號" placeholder="請輸入訂單編號">
+                            </div>
+                            <div class="form-group imgcode">
+                                <label>驗證碼</label>
+                                <div>
+                                    <input class="form-control" data-toggle="tooltip" title="請輸入驗證碼" placeholder="請輸入驗證碼">
+                                    <img src="images/imgcode.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check">
+                                    <label class="form-check-label" for="check">
+                                        記住登入資訊   
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-info">
+                                <button type="button" class="btn btn-primary btn-md btn-block">會員登入</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <header id="header">
+        <div class="container">
+            <div class="top">
+                <a href=""  data-toggle="modal" data-target="#myModal">登入</a>
+                <a href="memberjoin.html">加入會員</a>
+                <a href="">
+                    <img src="images/line.png" alt="" srcset="">
+                </a>
+                <a href="">
+                    <img src="images/korea.png" alt="" srcset="">
+                </a>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="" srcset="">
+                </a>
+            </div>
+        </div>
+       
+        <div class="menu">
+            <div class="container">
+                <div class="left">
+                    <div class="icon-menu">
+                        <div class="list">
+                            <a href="news.html">最新消息與活動</a>
+                            <a href="product.html">商品內容</a>
+                            <a href="video.html">使用分享與影片</a>
+                            <a href="about.html">關於我們</a>
+                            <a href="contact.html">聯絡我們</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="right">
+                    <div class="cart">
+                        <div class="icon-cart">
+                            <span>0</span>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <div class="icon-search">
+                            <input type="text" placeholder="搜尋">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="regular slider">
+        <div>
+            <img src="images/banner_01.jpg">
+        </div>
+        <div>
+            <img src="images/banner_02.jpg">
+        </div>
+        <div>
+            <img src="images/banner_03.jpg">
+        </div>
+    </div>
+    <section id="awards">
+        <div class="container">
+            <div class="left">
+                <div>歷年獲獎記錄</div>
+                <div>MOTHER-K&K-MOM Awards Collection</div>
+            </div>
+            <div class="right">
+                <img src="images/awards_01.jpg">
+                <img src="images/awards_02.jpg">
+                <img src="images/awards_03.jpg">
+                <img src="images/awards_04.jpg">
+                <img src="images/awards_05.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section id="video">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/index_slide_01.jpg" alt="" srcset="" class="img-responsive">
+                </div>
+                <div class="col-md-6 youtube">
+                    <img src="images/youtube.jpg" alt="" srcset="" class="img-responsive">
+                    <div class="arrow">
+                        <a href="https://www.youtube.com/watch?v=OSwbDQSymHA">▶</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fun">
+        <div class="container">
+            <div class="info">
+                <div>EASY簡單育兒，FUN有趣育兒</div>
+                <div>媽咪們的苦惱交給 MOTHER-K來解決吧！</div>
+            </div>
+        </div>
+    </section>
+    <section id="news">
+        <div class="container">
+            <div class="title">
+                <div>
+                    <img src="images/news_icon.png" alt="" srcset="">
+                </div>
+                <div class="cn">最新消息與活動</div>
+                <div class="eng">NEWS&EVENT</div>
+            </div>
+            <div class="info">
+                <div class="row">
+                    <div class="left col-md-5">
+                        <div class="img">
+                            <img src="images/news_index_01.jpg" alt="" srcset="" class="img-responsive">
+                        </div>
+
+                    </div>
+                    <div class="right col-md-7">
+                        <div class="img">
+                            <img src="images/news_index_02.jpg" alt="" srcset="" class="img-responsive">
+                        </div>
+
+                        <div class="img">
+                            <img src="images/news_index_03.jpg" alt="" srcset="" class="img-responsive">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="child">
+        <div class="container">
+            <div class="info">
+                <div>為了媽咪們的需求 創造新的概念</div>
+                <div>MOTHER-K致力於生產媽咪們值得信賴的育兒用品</div>
+                <div>為媽咪及寶貝們的安全健康嚴格把關</div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="sale">
+        <div class="container">
+            <div class="title">
+                <div>
+                    <img src="images/top_icon.png" alt="" srcset="">
+                </div>
+                <div class="cn">熱銷商品</div>
+                <div class="eng">HOT SALE</div>
+            </div>
+            <div class="info">
+                <div class="n5">
+                    <div class="cover">
+                        <img src="images/sale_01.png" alt="" srcset="" class="img-responsive">
+                    </div>
+                    <div class="desc">
+                        <div>寶寶抗菌儲存袋全尺寸(Min~XL)</div>
+                        <div class="price">
+                            <s>市價$1,060</s>
+                        </div>
+                        <div class="discount">$601</div>
+                    </div>
+                </div>
+                <div class="n5">
+                    <div class="cover">
+                        <img src="images/sale_02.jpg" alt="" srcset="" class="img-responsive">
+                    </div>
+                    <div class="desc">
+                        <div>第二代 多功能學飲吸吸杯300ml (藍)</div>
+                        <div class="price">
+                            <s>市價$950</s>
+                        </div>
+                        <div class="discount">$659</div>
+                    </div>
+                </div>
+                <div class="n5">
+                    <div class="cover">
+                        <img src="images/sale_03.jpg" alt="" srcset="" class="img-responsive">
+                    </div>
+                    <div class="desc">
+                        <div>有機幼兒洗衣劑/洗衣精(瓶裝) 1700ml</div>
+                        <div class="price">
+                            <s>市價$450</s>
+                        </div>
+                        <div class="discount">$388</div>
+                    </div>
+                </div>
+                <div class="n5">
+                    <div class="cover">
+                        <img src="images/sale_04.jpg" alt="" srcset="" class="img-responsive">
+                    </div>
+                    <div class="desc">
+                        <div>矽膠奶瓶刷/清潔刷/水壺刷/水杯刷2入組(椰子色)</div>
+                        <div class="price">
+                            <s>市價$480</s>
+                        </div>
+                        <div class="discount">$399</div>
+                    </div>
+                </div>
+                <div class="n5">
+                    <div class="cover">
+                        <img src="images/sale_05.jpg" alt="" srcset="" class="img-responsive">
+                    </div>
+                    <div class="desc">
+                        <div>無螢光洗衣網/洗衣袋 立體圓形3入</div>
+                        <div class="price">
+                            <s>市價$820</s>
+                        </div>
+                        <div class="discount">$489</div>
+                    </div>
+                </div>
+                <div class="n5">
+                    <div class="cover">
+                        <img src="images/sale_06.jpg" alt="" srcset="" class="img-responsive">
+                    </div>
+                    <div class="desc">
+                        <div>K-MOM站立式抗菌母乳袋 (50入)</div>
+                        <div class="price">
+                            <s>市價$350</s>
+                        </div>
+                        <div class="discount">$298</div>
+                    </div>
+                </div>
+                <div class="n5">
+                    <div class="cover">
+                        <img src="images/sale_07.jpg" alt="" srcset="" class="img-responsive">
+                    </div>
+                    <div class="desc">
+                        <div>奶粉抗菌儲存袋(90入)</div>
+                        <div class="price">
+                            <s>市價$790</s>
+                        </div>
+                        <div class="discount">$540</div>
+                    </div>
+                </div>
+                <div class="n5">
+                    <div class="cover">
+                        <img src="images/sale_08.jpg" alt="" srcset="" class="img-responsive">
+                    </div>
+                    <div class="desc">
+                        <div>20包組 頂級乾溼兩用紙巾-純棉</div>
+                        <div class="price">
+                            <s>市價$1,200</s>
+                        </div>
+                        <div class="discount">$833</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="top">
+                <a href="account.html">購物須知</a>
+                <a href="rule.html">退換貨規則</a>
+                <a href="question.html">常見問題</a>
+                <a href="privacy.html">隱私權政策</a>
+            </div>
+            <div class="center">
+                <div class="left">SERVICE</div>
+                <div class="right">
+                    <div>
+                        <b>E-MAIL :</b>service@motherk.com.tw</div>
+                    <div>
+                        <b>FREE TEL :</b> 0800-500-522 (週一~週五9:30~12:00 / 13:00~17:30)</div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                Copyright © 2016 MOTHER-K Taiwan All rights reserved.
+            </div>
+        </div>
+
+    </footer>
+    <div class="arrow">▲
+    </div>
+    <div class="social">
+        <ul>
+            <li class="icon-facebook blue">
+                <a href="#"></a>
+            </li>
+            <li class="green">
+                <a href="#"><img src="images/line.png" alt="" srcset=""></a>
+            </li>
+            <li class="icon-mail4 orange">
+                <a href="contact.html"></a>
+            </li>
+            <li class="icon-heart purple">
+                <a href="#"></a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="js/jquery-2.1.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.js" type="text/javascript"></script>
+<script src="js/script.js"></script>
+
+</html>
