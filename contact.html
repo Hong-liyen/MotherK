@@ -224,9 +224,75 @@
             </button>
             </a>
         </li>
-
     </div>
-
+    <div class="modal fade" id="servive" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">服務資訊</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <p>
+                            <b>服務時間：週一～週五</b>
+                        </p>
+                        <p>09：30～12：00</p>
+                        <p>13：00～17：30</p>
+                        <p>
+                            <b>客服信箱：</b>
+                        </p>
+                        <p>service＠motherk.com.tw</p>
+                        <div class="button-group">
+                            <div>
+                                <a href="" class="btn btn-green">客服專線</a>
+                                <a href="" class="btn btn-green">聯絡我們</a>
+                            </div>
+                            <div>
+                                <a href="account.html" class="btn btn-primary">購物須知</a>
+                                <a href="rule.html" class="btn btn-primary">退換貨規則</a>
+                            </div>
+                            <div>
+                                <a href="question.html" class="btn btn-primary">常見問題</a>
+                                <a href="privacy.html" class="btn btn-primary">隱私權政策</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="account" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">我的帳戶</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <div class="button-group">
+                            <div>
+                                <a href="memberjoin.html" class="btn btn-green">加入會員</a>
+                                <a href="" class="btn btn-green">會員登入</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="member-bottom">
+        <li class="shopping">
+            <a href="#" class="icon-cart">購物清單</a>
+        </li>
+        <li class="servive">
+            <a data-toggle="modal" data-target="#servive" class="icon-alarm">服務資訊</a>
+        </li>
+        <li class="account">
+            <a data-toggle="modal" data-target="#account" class="icon-user">我的帳戶</a>
+        </li>
+    </div>
 </body>
 <script src="js/jquery-2.1.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
