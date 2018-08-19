@@ -89,6 +89,15 @@ section {
     margin-top: 1.6em;
 }
 
+.panel-title {
+    font-weight: bold;
+    a {
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
 #header {
     background-color: $mainColor;
     text-align: center;
@@ -130,6 +139,11 @@ section {
         padding: 1em 0 1.2em;
         &:hover {
             opacity: 0.8;
+        }
+        img {
+            @include breakpoint(md) {
+                height: 3em;
+            }
         }
     }
     .menu {
@@ -659,6 +673,7 @@ section {
 }
 
 #memberjoin,
+#memberalter,
 #product,
 #productitem,
 #eventitem,
@@ -968,7 +983,8 @@ section {
 }
 
 #account,
-#favorite {
+#favorite,
+#memberalter {
     .nav>li>a.active {
         background-color: lighten($mainColor, 5%);
         color: darken($mainColor, 35%);
@@ -984,21 +1000,24 @@ section {
             background-color: darken($mainColor, 20%);
             color: #fff;
             cursor: pointer;
-            .panel-title {
-                a {
-                    &:hover {
-                        color: #fff;
-                    }
-                }
-            }
         }
     }
     .panel-heading {
         cursor: pointer;
     }
+    .panel-blue {
+        .panel-heading {
+            background-color: #b7c8dc;
+            color: #fff;
+        }
+        .panel-body {
+            border: 1px solid #b7c8dc;
+        }
+    }
 }
 
-#memberjoin {
+#memberjoin,
+#memberalter {
     .form-info {
         .form-group {
             .form-check-label {
@@ -1040,6 +1059,208 @@ section {
         >.form-control {
             margin-top: 1.2em;
         }
+    }
+}
+
+#memberjoin,
+#memberalter {
+    .date,
+    .address {
+        .form-control {
+            width: calc((100% - 0.4em*2) / 3);
+            @include breakpoint(sm) {
+                width: 100%;
+            }
+            +* {
+                @include breakpoint(sm) {
+                    margin-top: 1.2em;
+                }
+            }
+        }
+    }
+    .address {
+        >.form-control {
+            margin-top: 1.2em;
+            width: 100%;
+        }
+    }
+    .getInfo {
+        >.form-control {
+            margin-top: 1.2em;
+        }
+        button {
+            border: 0;
+        }
+    }
+    .imgcode {
+        >div {
+            * {
+                display: inline-block;
+                width: 50%;
+            }
+            img {
+                height: 2em;
+                width: auto;
+            }
+        }
+    }
+    .form-info {
+        margin-top: 2em;
+    }
+}
+
+#memberjoin {
+    .date,
+    .address {
+        .form-control {
+            width: calc((100% - 0.4em*2) / 3);
+            @include breakpoint(sm) {
+                width: 100%;
+            }
+            +* {
+                @include breakpoint(sm) {
+                    margin-top: 1.2em;
+                }
+            }
+        }
+    }
+    .address {
+        >.form-control {
+            margin-top: 1.2em;
+            width: 100%;
+        }
+    }
+    .getInfo {
+        >.form-control {
+            margin-top: 1.2em;
+        }
+    }
+    .form-info {
+        margin-top: 2em;
+    }
+}
+
+.imgcode {
+    >div {
+        * {
+            display: inline-block;
+            width: 50%;
+        }
+        img {
+            height: 2em;
+            width: auto;
+        }
+    }
+}
+
+.social {
+    position: fixed;
+    top: 30%;
+    right: 0;
+    z-index: 2;
+    @include breakpoint(md) {
+        display: none;
+    }
+    ul {
+        text-align: center;
+        li {
+            cursor: pointer;
+            list-style: none;
+            width: 3em;
+            height: 3em;
+            line-height: 3em;
+            color: #fff;
+            font-size: 1.2em;
+            +* {
+                margin-top: 0.6em;
+            }
+        }
+        .icon-facebook:before {
+            font-size: 1.4em;
+        }
+        .icon-mail4:before {
+            font-size: 1.4em;
+        }
+        .icon-heart:before {
+            font-size: 1.2em;
+        }
+    }
+}
+
+.modal {
+    .modal-header {
+        text-align: center;
+        background-color: #93D0D1;
+        color: #fff;
+        overflow: hidden;
+        font-weight: bold;
+        border-radius: 6px 6px 0 0;
+        .close {
+            margin-top: -5px;
+            color: darken($mainColor, 80%);
+            font-size: 2.2em;
+        }
+    }
+    .modal-content {
+        border: 0;
+    }
+    .form-group {
+        .form-check {
+            text-align: center;
+        }
+        .form-check-label {
+            cursor: pointer;
+            text-align: center;
+        }
+    }
+}
+
+#twzipcode {
+    select,
+    input {
+        width: calc((100% - 0.4em*2) / 3);
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.428571429;
+        color: #555;
+        vertical-align: middle;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        @include breakpoint(xs) {
+            width: 100%;
+        }
+    }
+    >* {
+        +* {
+            margin-left: 0.4em;
+            @include breakpoint(xs) {
+                margin-left: 0;
+                margin-top: 1.2em;
+            }
+        }
+    }
+}
+
+#favorite {
+    .table {
+        text-align: center;
+        thead {
+            background-color: #57a1d9;
+            color: #fff;
+            border-radius: 6px 6px 0 0;
+            overflow: hidden;
+        }
+    }
+    .table>thead>tr>th,
+    .table>tbody>tr>th,
+    .table>tfoot>tr>th,
+    .table>thead>tr>td,
+    .table>tbody>tr>td,
+    .table>tfoot>tr>td {
+        vertical-align: middle;
     }
 }
 
@@ -1221,5 +1442,55 @@ section {
                 margin-top: 1.2em;
             }
         }
+    }
+}
+
+#favorite,
+#personal {
+    .btn-green {
+        background-color: darken($mainColor, 15%);
+        color: #fff;
+        &:hover {
+            opacity: 0.8;
+            color: #fff;
+        }
+    }
+    .table {
+        text-align: center;
+        thead {
+            background-color: lighten(#57a1d9, 15%);
+            color: #fff;
+            border-radius: 6px 6px 0 0;
+            overflow: hidden;
+        }
+        tbody {
+            tr {
+                td {
+                    +* {
+                        border-left: 1px dashed #929292;
+                    }
+                    i {
+                        color: #EA697F;
+                        font-size: 1.2em;
+                        cursor: pointer;
+                    }
+                }
+                td:nth-child(2) {
+                    text-align: left;
+                    font-size: 1.2em;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+    .table>thead>tr>th,
+    .table>tbody>tr>th,
+    .table>tfoot>tr>th,
+    .table>thead>tr>td,
+    .table>tbody>tr>td,
+    .table>tfoot>tr>td {
+        vertical-align: middle;
     }
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>常見問題</title>
+    <title>修改密碼/會員資料</title>
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/style.css">
@@ -41,8 +41,8 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="check">
                                 <label class="form-check-label" for="check">
-                                        記住登入資訊   
-                                    </label>
+                                    記住登入資訊
+                                </label>
                             </div>
                         </div>
                         <div class="form-info">
@@ -102,18 +102,22 @@
         </div>
     </header>
 
-    <section id="account">
+    <section id="memberalter">
         <div class="container">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="index.html">首頁</a>
+                </li>
+                <li>
+                    會員專區
+                </li>
+                <li class="active">修改密碼/會員資料</li>
+            </ol>
+            <div class="title">
+                <div class="cn">修改密碼/會員資料</div>
+                <div class="eng">MEMBER</div>
+            </div>
             <div class="row">
-                <div class="col-md-12">
-                    <ol class="breadcrumb">
-                        <li>
-                            <a href="index.html">首頁</a>
-                        </li>
-                        <li>會員權益</li>
-                        <li class="active">常見問題</li>
-                    </ol>
-                </div>
                 <div class="col-md-3 left">
                     <div class="panel-group" id="accordionMenu" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-success">
@@ -124,14 +128,14 @@
                                     </a>
                                 </h4>
                             </div>
-                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                 <div class="panel-body">
                                     <ul class="nav">
                                         <li>
                                             <a href="personal.html">訊息管理中心</a>
                                         </li>
                                         <li>
-                                            <a href="memberalter.html">修改密碼/會員資料</a>
+                                            <a href="memberalter.html" class="active">修改密碼/會員資料</a>
                                         </li>
                                         <li>
                                             <a href="favorite.html">最愛清單</a>
@@ -148,7 +152,7 @@
                                     </a>
                                 </h4>
                             </div>
-                            <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                 <div class="panel-body">
                                     <ul class="nav">
                                         <li>
@@ -158,10 +162,10 @@
                                             <a href="rule.html">退換貨規則</a>
                                         </li>
                                         <li>
-                                            <a href="question.html" class="active">常見問題</a>
+                                            <a href="#">常見問題</a>
                                         </li>
                                         <li>
-                                            <a href="privacy.html">隱私權政策</a>
+                                            <a href="#">隱私權政策</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -169,83 +173,75 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-9 right">
-                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                        <div class="panel panel-blue" id="collapseOne_container">
-                            <div class="panel-heading" role="tab" id="headingThree" href="#collapseThree" data-toggle="collapse" data-parent="#accordion">
-                                <h4 class="panel-title">
-                                    <a role="button" aria-expanded="true" aria-controls="collapseThree">
-                                        韓國品牌 MOTHER-K 的名字由來？
-                                    </a>
-                                </h4>
+                <div class="col-md-9">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="form-group">
+                                <label>會員帳號</label>
+                                <div>Facebook_123456789</div>
                             </div>
-                            <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
-                                <div class="panel-body">
-                                    <p>MOTHER-K是來自韓國的品牌，創辦人Kim Mim Jeong，也是育有孩子的媽咪，因為想要給小寶貝更安全更衛生的抗菌用品，所以創辦了MOTHER-K，K即代表Kim的縮寫。</p>
+                            <div class="form-group">
+                                <label>舊密碼</label>
+                                <input class="form-control" data-toggle="tooltip" title="請輸入4~20個數字或英文字母" placeholder="請輸入4~20個數字或英文字母">
+                            </div>
+                            <div class="form-group">
+                                <label>新密碼</label>
+                                <input class="form-control" data-toggle="tooltip" title="請輸入4~20個數字或英文字母" placeholder="請輸入4~20個數字或英文字母">
+                            </div>
+                            <div class="form-group">
+                                <label>確認密碼</label>
+                                <input class="form-control" data-toggle="tooltip" title="請輸入帳號" placeholder="再次輸入上方相同之密碼">
+                            </div>
+                            <div class="form-group getInfo">
+                                <label>從何得知</label>
+                                <div>
+                                    <button type="button" class="btn btn-secondary">Facebook</button>
+                                    <button type="button" class="btn btn-secondary">網路搜尋</button>
+                                    <button type="button" class="btn btn-secondary">部落客推薦</button>
+                                    <button type="button" class="btn btn-secondary">親友推薦</button>
+                                </div>
+                                <input class="form-control" data-toggle="tooltip" title="其他" placeholder="其他">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <form>
+                            <div class="form-group">
+                                <label>姓名</label>
+                                <div>Amanda Hong</div>
+                            </div>
+                            <div class="form-group date">
+                                <label>生日</label>
+                                <span class="red">*請填寫確實，以便寄發禮品</span>
+                                <div class="form-inline">
+                                    <select class="form-control sel_year" rel="2000">
+                                    </select>
+                                    <select class="form-control sel_month" rel="1">
+                                    </select>
+                                    <select class="form-control sel_day" rel="1">
+                                    </select>
                                 </div>
                             </div>
-                        </div>
-                        <div class="panel panel-blue" id="collapseTwo_Container">
-                            <div class="panel-heading" role="tab" id="headingFour" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" aria-expanded="false" aria-controls="collapseFour">
-                                        寶寶抗菌儲存袋，只有寶寶的物品可用嗎?
-                                    </a>
-                                </h4>
+                            <div class="form-group">
+                                <label>信箱</label>
+                                <div>amanda@gmail.com</div>
                             </div>
-                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                <div class="panel-body">
-                                    <p>從媽咪懷孕開始準備的待產包，到月子中心的用品，新生兒的物品，帶寶寶外出的包包，一家人出遊的行李，寶寶到托兒所的托育包，幼兒到幼稚園的書包備用衣 物...等，都可以使用通過(美國FDA/KFDA認證)的MOTHER-K寶寶抗菌儲存袋及輕便袋來安全地存放媽咪及寶寶的物品。 有BCA-502MB的抗菌成份，經實驗證明可以抵抗大腸桿菌及金黃色葡萄球菌，給寶寶衛生又安全的物品儲存袋。
-                                    </p>
-                                    <p class="red">
-                                        ※MOTHER-K建議：盡量不要使用一般紅條夾鏈袋來裝寶寶的物品！不要讓不安全的化學成份來傷害寶寶！</p>
-
+                            <div class="form-group">
+                                <label>手機</label>
+                                <input class="form-control" data-toggle="tooltip" title="請輸入手機號碼" placeholder="請輸入手機號碼">
+                            </div>
+                            <div class="form-group address">
+                                <label>地址</label>
+                                <div class="form-inline">
+                                    <div id="twzipcode">
+                                    </div>
                                 </div>
+                                <input class="form-control" data-toggle="tooltip" title="請輸入地址" placeholder="請輸入地址">
                             </div>
-                        </div>
-                        <div class="panel panel-blue" id="collapseThree_Container">
-                            <div class="panel-heading" role="tab" id="headingFive" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" aria-expanded="false" aria-controls="collapseFive">
-                                        一般的紅條夾鏈袋與MOTHER-K的抗菌儲存袋差別？
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                                <div class="panel-body">
-                                    <p>一般市售的紅條夾鍵袋大部份沒有滅菌過，也無法得知製作過程的環境，材質不安全，也容易使化學成份溶出，袋子的材質脆弱易破裂，夾鍊條的功能使用數次也容易鬆落，沒有經過檢驗或國際認證及實驗室的測試！ 新生兒或寶寶的肌膚非常敏感，小小的腸胃也很脆弱，MOTHER-K建議請盡量不要使用一般市售的紅條夾鍵袋來裝孕媽咪及寶寶的物品！
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-blue" id="collapseThree_Container">
-                            <div class="panel-heading" role="tab" id="headingSix" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" aria-expanded="false" aria-controls="collapseSix">
-                                        寶寶抗菌儲存袋是否可重覆使用？
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-                                <div class="panel-body">
-                                    <p>MOTHER-K的寶寶抗菌儲存袋及輕便袋是可以重覆使用的，多次使用後或裝過寶寶髒衣物品時，可清水沖洗涼乾後繼續使用，但抗菌的效力依個人使用環境及清洗次數會逐漸降低喔！</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-blue" id="collapseThree_Container">
-                            <div class="panel-heading" role="tab" id="headingSeven" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" aria-expanded="false" aria-controls="collapseSeven">
-                                        拋棄式奶瓶及PPSU的奶嘴是否可與其他牌的奶嘴共用?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
-                                <div class="panel-body">
-                                    <p>可以的，可與他牌的一班標準寬口徑奶嘴共用</p>
-                                </div>
-                            </div>
-                        </div>
+                        </form>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <button type="button" class="btn btn-primary btn-md">確認修改</button>
                     </div>
                 </div>
             </div>
@@ -281,7 +277,7 @@
     <div class="social">
         <li>
             <button class="sw_button icon-facebook blue">
-        </button>
+            </button>
             <div class="sw_content">
                 <h3>來幫我們按個讚吧</h3>
                 <iframe src="http://www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/motherk.Taiwan/;width=210&amp;height=220&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=438889712801266"
@@ -290,8 +286,8 @@
         </li>
         <li>
             <button class="sw_button green line" href="#thumb">
-            <img src="images/line.png" alt="" width="28px">
-        </button>
+                <img src="images/line.png" alt="" width="28px">
+            </button>
             <div class="sw_content">
                 <img src="images/1477014217216.png">
                 <p>@mother-k</p>
@@ -300,16 +296,16 @@
         <li>
             <a href="contact.html">
                 <button class="icon-mail4 orange">
-                <span class="numbers">
-                    <b>5</b>
-                </span>
-            </button>
+                    <span class="numbers">
+                        <b>5</b>
+                    </span>
+                </button>
             </a>
         </li>
         <li>
             <a href="favorite.html">
                 <button class="icon-heart purple">
-            </button>
+                </button>
             </a>
         </li>
 
@@ -320,6 +316,8 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/slick.js" type="text/javascript"></script>
 <script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/birthday.js"></script>
+<script src="js/jquery.twzipcode.min.js"></script>
 <script src="js/script.js"></script>
 
 </html>
