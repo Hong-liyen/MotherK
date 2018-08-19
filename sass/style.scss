@@ -85,19 +85,17 @@ section {
     }
 }
 
-
 .info {
     margin-top: 1.6em;
 }
 
 #header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    z-index: 20;
     background-color: $mainColor;
     text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
     .top {
         text-align: right;
         padding: 0.5em 0 0.2em;
@@ -130,6 +128,9 @@ section {
     }
     .logo {
         padding: 1em 0 1.2em;
+        &:hover {
+            opacity: 0.8;
+        }
     }
     .menu {
         background-color: #fff;
@@ -337,6 +338,9 @@ section {
     border-radius: 50%;
     text-align: center;
     cursor: pointer;
+    @include breakpoint(sm) {
+        opacity: 0;
+    }
     &:hover {
         opacity: 0.8;
     }
@@ -563,7 +567,7 @@ section {
     }
 }
 
-#video {
+#index-video {
     .youtube {
         position: relative;
         @include breakpoint(md) {
@@ -597,34 +601,63 @@ section {
     @include breakpoint(md) {
         display: none;
     }
-    ul {
+    li {
         text-align: center;
-        li {
-            cursor: pointer;
-            list-style: none;
+        list-style: none;
+        .opened {
+            transform: translateX(-230px);
+            z-index: 1;
+        }
+        button {
+            border: 0;
+            display: block;
             width: 3em;
             height: 3em;
             line-height: 3em;
             color: #fff;
             font-size: 1.2em;
-            +* {
-                margin-top: 0.6em;
-            }
-            a {
-                display: block;
-            }
+            margin-bottom: 0.8em;
+        }
+        .sw_content {
+            display: none;
         }
         .icon-facebook:before {
             font-size: 1.4em;
         }
-        .icon-mail4:before {
-            font-size: 1.4em;
+        .line {
+            img {
+                margin-bottom: 0.4em;
+            }
+        }
+        .icon-mail4 {
+            position: relative;
+            &:before {
+                font-size: 1.4em;
+            }
+            span.numbers {
+                position: absolute;
+                left: 8px;
+                top: 8px;
+                color: #fff;
+                width: 15px;
+                height: 15px;
+                background-color: red;
+                border-radius: 100%;
+                b {
+                    position: absolute;
+                    left: 4px;
+                    top: -18px;
+                    font-size: 11px;
+                    font-weight: bold;
+                }
+            }
         }
         .icon-heart:before {
             font-size: 1.2em;
         }
     }
 }
+
 #memberjoin,
 #product,
 #productitem,
@@ -633,8 +666,12 @@ section {
 #about,
 #event,
 #contact,
-#account {
+#account,
+#favorite {
     margin-top: 12em;
+    @include breakpoint(md) {
+        margin-top: 8.5em;
+    }
     .title {
         text-align: left;
         padding-left: 1.2em;
@@ -645,7 +682,9 @@ section {
 
 #event {
     .info {
-        >* {
+        >a {
+            display: block;
+            width: 100%;
             padding: 1.2em 0.8em;
             font-size: 1.2em;
             &:hover {
@@ -655,11 +694,6 @@ section {
             &:nth-child(odd) {
                 background-color: lighten($mainColor, 25%);
             }
-            a {
-                >* {
-                    display: inline-block;
-                }
-            }
         }
         .date {
             width: 12%;
@@ -667,15 +701,20 @@ section {
             text-align: center;
         }
         .name {
-            width: 15%;
+            display: inline-block;
+            width: 12%;
             text-align: center;
             color: #fff;
-            padding: 0.4em 0 0.6em;
+            padding: 0.4em 0.6em 0.6em;
             border-radius: 8px;
             &:before {
                 margin-right: 0.4em;
                 margin-top: 0.5em;
                 font-size: 0.8em;
+            }
+            @include breakpoint(sm) {
+                width: 100%;
+                margin: 0.6em 0;
             }
         }
         .item {
@@ -701,7 +740,6 @@ section {
         }
     }
     .right {
-
         .list {
             +* {
                 margin-top: 3.6em;
@@ -894,6 +932,9 @@ section {
             bottom: -20px;
         }
     }
+    .slider {
+        margin-top: 1.2em;
+    }
     .share {
         .item {
             img {
@@ -926,9 +967,14 @@ section {
     }
 }
 
-#account {
-    .left{
-        @include breakpoint(md){
+#account,
+#favorite {
+    .nav>li>a.active {
+        background-color: lighten($mainColor, 5%);
+        color: darken($mainColor, 35%);
+    }
+    .left {
+        @include breakpoint(md) {
             margin-bottom: 1.2em;
         }
     }
@@ -953,6 +999,13 @@ section {
 }
 
 #memberjoin {
+    .form-info {
+        .form-group {
+            .form-check-label {
+                cursor: pointer;
+            }
+        }
+    }
     .date,
     .address {
         .form-control {
@@ -974,30 +1027,19 @@ section {
         }
     }
     .getInfo {
-        >.form-control {
-            margin-top: 1.2em;
-        }
-    }
-}
-
-#account {
-    .panel-success {
-        border: 1px solid darken($mainColor, 20%);
-        .panel-heading {
-            background-color: darken($mainColor, 20%);
-            color: #fff;
-            cursor: pointer;
-            .panel-title {
-                a {
-                    &:hover {
-                        color: #fff;
+        >div {
+            button {
+                @include breakpoint(sm) {
+                    width: 100%;
+                    +* {
+                        margin-top: 1.2em;
                     }
                 }
             }
         }
-    }
-    .panel-heading {
-        cursor: pointer;
+        >.form-control {
+            margin-top: 1.2em;
+        }
     }
 }
 
@@ -1026,6 +1068,9 @@ section {
         >.form-control {
             margin-top: 1.2em;
         }
+        button {
+            border: 0;
+        }
     }
     .imgcode {
         >div {
@@ -1041,27 +1086,6 @@ section {
     }
     .form-info {
         margin-top: 2em;
-    }
-}
-
-#account {
-    .panel-success {
-        border: 1px solid darken($mainColor, 20%);
-        .panel-heading {
-            background-color: darken($mainColor, 20%);
-            color: #fff;
-            cursor: pointer;
-            .panel-title {
-                a {
-                    &:hover {
-                        color: #fff;
-                    }
-                }
-            }
-        }
-    }
-    .panel-heading {
-        cursor: pointer;
     }
 }
 
@@ -1144,10 +1168,58 @@ section {
 }
 
 .modal {
-    .form-group{
-        text-align: left;
-    }
-    .form-check{
+    .modal-header {
         text-align: center;
+        background-color: #93D0D1;
+        color: #fff;
+        overflow: hidden;
+        font-weight: bold;
+        border-radius: 6px 6px 0 0;
+        .close {
+            margin-top: -5px;
+            color: darken($mainColor, 80%);
+            font-size: 2.2em;
+        }
+    }
+    .modal-content {
+        border: 0;
+    }
+    .form-group {
+        .form-check {
+            text-align: center;
+        }
+        .form-check-label {
+            cursor: pointer;
+            text-align: center;
+        }
+    }
+}
+
+#twzipcode {
+    select,
+    input {
+        width: calc((100% - 0.4em*2) / 3);
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.428571429;
+        color: #555;
+        vertical-align: middle;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        @include breakpoint(xs) {
+            width: 100%;
+        }
+    }
+    >* {
+        +* {
+            margin-left: 0.4em;
+            @include breakpoint(xs) {
+                margin-left: 0;
+                margin-top: 1.2em;
+            }
+        }
     }
 }

@@ -13,55 +13,55 @@
 </head>
 
 <body>
-       <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">會員登入</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label>信箱</label>
-                                <input class="form-control" data-toggle="tooltip" title="請輸入信箱" placeholder="請輸入信箱">
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">會員登入</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label>信箱</label>
+                            <input class="form-control" data-toggle="tooltip" title="請輸入信箱" placeholder="請輸入信箱">
+                        </div>
+                        <div class="form-group">
+                            <label>訂單編號</label>
+                            <input class="form-control" data-toggle="tooltip" title="請輸入訂單編號" placeholder="請輸入訂單編號">
+                        </div>
+                        <div class="form-group imgcode">
+                            <label>驗證碼</label>
+                            <div>
+                                <input class="form-control" data-toggle="tooltip" title="請輸入驗證碼" placeholder="請輸入驗證碼">
+                                <img src="images/imgcode.png" alt="" srcset="">
                             </div>
-                            <div class="form-group">
-                                <label>訂單編號</label>
-                                <input class="form-control" data-toggle="tooltip" title="請輸入訂單編號" placeholder="請輸入訂單編號">
-                            </div>
-                            <div class="form-group imgcode">
-                                <label>驗證碼</label>
-                                <div>
-                                    <input class="form-control" data-toggle="tooltip" title="請輸入驗證碼" placeholder="請輸入驗證碼">
-                                    <img src="images/imgcode.png" alt="" srcset="">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="check">
-                                    <label class="form-check-label" for="check">
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="check">
+                                <label class="form-check-label" for="check">
                                         記住登入資訊   
                                     </label>
-                                </div>
                             </div>
-                            <div class="form-info">
-                                <button type="button" class="btn btn-primary btn-md btn-block">會員登入</button>
-                            </div>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="form-info">
+                            <button type="button" class="btn btn-primary btn-md btn-block">會員登入</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
     <header id="header">
         <div class="container">
             <div class="top">
-                <a href=""  data-toggle="modal" data-target="#myModal">登入</a>
+                <a href="" data-toggle="modal" data-target="#myModal">登入</a>
                 <a href="">加入會員</a>
                 <a href="">
                     <img src="images/line.png" alt="" srcset="">
                 </a>
-                <a href="">
+                <a href="http://www.motherk.co.kr/company/intro.html">
                     <img src="images/korea.png" alt="" srcset="">
                 </a>
             </div>
@@ -71,7 +71,7 @@
                 </a>
             </div>
         </div>
-       
+
         <div class="menu">
             <div class="container">
                 <div class="left">
@@ -105,6 +105,17 @@
     <section id="productitem">
         <div class="container">
             <div class="row">
+                <div class="col-md-12">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="index.html">首頁</a>
+                        </li>
+                        <li>
+                            <a href="product.html">商品內容</a>
+                        </li>
+                        <li class="active">商品詳細內容</li>
+                    </ol>
+                </div>
                 <div class="col-md-3 left">
                     <div class="list-group">
                         <a href="#" class="list-group-item">
@@ -202,7 +213,7 @@
     <footer id="footer">
         <div class="container">
             <div class="top">
-              <a href="account.html">購物須知</a>
+                <a href="account.html">購物須知</a>
                 <a href="rule.html">退換貨規則</a>
                 <a href="question.html">常見問題</a>
                 <a href="privacy.html">隱私權政策</a>
@@ -227,27 +238,47 @@
     <div class="arrow">▲
     </div>
     <div class="social">
-        <ul>
-            <li class="icon-facebook blue">
-                <a href="#"></a>
-            </li>
-            <li class="green">
-                <a href="#">
-                    <img src="images/line.png" alt="" srcset="">
-                </a>
-            </li>
-            <li class="icon-mail4 orange">
-                <a href="contact.html"></a>
-            </li>
-            <li class="icon-heart purple">
-                <a href="#"></a>
-            </li>
-        </ul>
+        <li>
+            <button class="sw_button icon-facebook blue">
+        </button>
+            <div class="sw_content">
+                <h3>來幫我們按個讚吧</h3>
+                <iframe src="http://www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/motherk.Taiwan/;width=210&amp;height=220&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=438889712801266"
+                    style="border:none; overflow:hidden; width:210px; height:220px;"></iframe>
+            </div>
+        </li>
+        <li>
+            <button class="sw_button green line" href="#thumb">
+            <img src="images/line.png" alt="" width="28px">
+        </button>
+            <div class="sw_content">
+                <img src="images/1477014217216.png">
+                <p>@mother-k</p>
+            </div>
+        </li>
+        <li>
+            <a href="contact.html">
+                <button class="icon-mail4 orange">
+                <span class="numbers">
+                    <b>5</b>
+                </span>
+            </button>
+            </a>
+        </li>
+        <li>
+            <a href="favorite.html">
+                <button class="icon-heart purple">
+            </button>
+            </a>
+        </li>
+
     </div>
+
 </body>
 <script src="js/jquery-2.1.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/slick.js" type="text/javascript"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
 <script src="js/script.js"></script>
 
 </html>
