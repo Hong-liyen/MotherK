@@ -1,3 +1,16 @@
+// wow
+new WOW().init();
+
+// sticky-header
+$(window).scroll(function() {
+    var winTop = $(window).scrollTop();
+    if (winTop >= 30) {
+        $("body").addClass("sticky-header");
+    } else {
+        $("body").removeClass("sticky-header");
+    }
+});
+
 // slick輪播
 
 $(".regular").slick({

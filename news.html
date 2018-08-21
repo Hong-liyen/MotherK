@@ -8,6 +8,7 @@
     <title>最新消息</title>
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="stylesheets/style.css">
 
 </head>
@@ -53,13 +54,16 @@
             </div>
         </div>
     </div>
-    <header id="header">
+    <header id="header" class="wow fadeIn">
         <div class="container">
             <div class="top">
                 <a href="" data-toggle="modal" data-target="#myModal">登入</a>
                 <a href="memberjoin.html">加入會員</a>
-                <a href="">
+                <a href="" class="line">
                     <img src="images/line.png" alt="" srcset="">
+                    <span>
+                        <img src="images/line_mk.jpg" alt="" srcset="">
+                    </span>
                 </a>
                 <a href="http://www.motherk.co.kr/company/intro.html">
                     <img src="images/korea.png" alt="" srcset="">
@@ -89,7 +93,24 @@
                 <div class="right">
                     <div class="cart">
                         <div class="icon-cart">
-                            <span>0</span>
+                            <span>1</span>
+                        </div>
+                        <div class="cart-list">
+                            購物車裡的商品
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="images/favorite_01.jpg" alt="" srcset="">
+                                    </td>
+                                    <td>28包組 掀蓋柔花款</td>
+                                    <td>1X</td>
+                                    <td>$1,500</td>
+                                </tr>
+                            </table>
+                            <hr>
+                            <div class="total">小計
+                                <span>$1,500</span>
+                            </div>
                         </div>
                     </div>
                     <div class="search">
@@ -102,11 +123,11 @@
         </div>
     </header>
 
-    <section id="event">
+    <section id="event" class="wow fadeInDown" data-wow-delay="0.2s">
         <div class="container">
             <ol class="breadcrumb">
                 <li>
-                    <a href="index.html">首頁</a>
+                    <a href="index.html" class="icon-home3"></a>
                 </li>
                 <li class="active">最新消息與活動</li>
             </ol>
@@ -143,7 +164,7 @@
             </div>
         </div>
     </section>
-    <footer id="footer">
+    <footer id="footer" class="wow fadeInDown" data-wow-delay="0.4s">
         <div class="container">
             <div class="top">
                 <a href="account.html">購物須知</a>
@@ -185,7 +206,7 @@
                 <img src="images/line.png" alt="" width="28px">
             </button>
             <div class="sw_content">
-                <img src="images/1477014217216.png">
+                <img src="images/line_mk.jpg">
                 <p>@mother-k</p>
             </div>
         </li>
@@ -193,7 +214,7 @@
             <a href="contact.html">
                 <button class="icon-mail4 orange">
                     <span class="numbers">
-                       <b>5</b>
+                        <b>5</b>
                     </span>
                 </button>
             </a>
@@ -226,7 +247,7 @@
                         <div class="button-group">
                             <div>
                                 <a href="" class="btn btn-green">客服專線</a>
-                                <a href="" class="btn btn-green">聯絡我們</a>
+                                <a href="contact.html" class="btn btn-green">聯絡我們</a>
                             </div>
                             <div>
                                 <a href="account.html" class="btn btn-primary">購物須知</a>
@@ -279,7 +300,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/slick.js" type="text/javascript"></script>
 <script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/script.js"></script>
-
 
 </html>
