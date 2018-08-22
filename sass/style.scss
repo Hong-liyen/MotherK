@@ -244,11 +244,11 @@ body.sticky-header {
                             display: inline-block;
                             position: relative;
                         }
-                        &:hover {
+                    }
+                    &:hover {
+                        .list {
                             @include breakpoint(md) {
-                                .list {
-                                    display: inline-block;
-                                }
+                                display: inline-block;
                             }
                         }
                     }
@@ -625,10 +625,44 @@ body.sticky-header {
                 }
             }
             .cover {
+                position: relative;
                 cursor: pointer;
                 &:hover {
                     img {
                         filter: blur(1px) grayscale(0.7);
+                    }
+                    .icon {
+                        display: block;
+                    }
+                }
+                .icon {
+                    display: none;
+                    text-align: center;
+                    color: #fff;
+                    position: absolute;
+                    bottom: 10px;
+                    right: 10px;
+                    .icon-heart {
+                        background-color: #93d0d1;
+                        &:hover {
+                            background-color: darken(#93d0d1, 20%);
+                        }
+                    }
+                    .icon-cart {
+                        background-color: #08b6b7;
+                        &:hover {
+                            background-color: darken(#08b6b7, 20%);
+                        }
+                    }
+                    >div {
+                        display: inline-block;
+                        width: 2.6em;
+                        height: 2.6em;
+                        line-height: 2.6em;
+                        font-size: 1.2em;
+                        text-shadow: 1px 1px #666;
+                        box-shadow: 1px 1px 2px #666;
+                        border-radius: 6px;
                     }
                 }
             }
@@ -915,26 +949,64 @@ body.sticky-header {
         }
         .col-md-3 {
             .item {
+                margin: 0.6em;
+                padding: 1em;
                 img {
                     margin-bottom: 1.2em;
                     &:hover {
                         filter: blur(1px) grayscale(0.7);
                     }
                 }
-                margin: 0.6em;
-                img {
-                    margin-bottom: 1.2em;
+                .img {
+                    position: relative;
+                    cursor: pointer;
+                    &:hover {
+                        img {
+                            filter: blur(1px) grayscale(0.7);
+                        }
+                        .icon {
+                            display: block;
+                        }
+                    }
+                    .icon {
+                        display: none;
+                        text-align: center;
+                        color: #fff;
+                        position: absolute;
+                        bottom: 10px;
+                        right: 10px;
+                        .icon-heart {
+                            background-color: #93d0d1;
+                            &:hover {
+                                background-color: darken(#93d0d1, 20%);
+                            }
+                        }
+                        .icon-cart {
+                            background-color: #08b6b7;
+                            &:hover {
+                                background-color: darken(#08b6b7, 20%);
+                            }
+                        }
+                        >div {
+                            display: inline-block;
+                            width: 2.6em;
+                            height: 2.6em;
+                            line-height: 2.6em;
+                            font-size: 1.2em;
+                            text-shadow: 1px 1px #666;
+                            box-shadow: 1px 1px 2px #666;
+                            border-radius: 6px;
+                        }
+                    }
                 }
-                padding: 1em;
-                >div:first-child {
+                .name {
                     font-size: 1.2em;
-                    min-height: 4.2em;
                 }
-                > :not(:first-child) {
+                > :not(.name) {
                     text-align: right;
                 }
                 .price {
-                    font-size: 1.2em;
+                    font-size: 1.4em;
                     opacity: 0.5;
                 }
                 .discount {
@@ -1027,6 +1099,7 @@ body.sticky-header {
                 width: 100%;
             }
             .title {
+                border: 0;
                 font-size: 1.2em;
                 text-align: left;
                 padding: 0.6em 0 0.4em;
