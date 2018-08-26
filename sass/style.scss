@@ -813,6 +813,7 @@ body.sticky-header {
 #contact,
 #account,
 #favorite {
+    min-height: 580px;
     margin-top: 12em;
     @include breakpoint(md) {
         margin-top: 8.5em;
