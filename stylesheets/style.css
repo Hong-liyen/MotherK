@@ -2342,24 +2342,110 @@ body.sticky-header #header .logo img {
   background-color: #89cbb0;
 }
 
-/* line 2001, ../sass/style.scss */
+/* line 2000, ../sass/style.scss */
+#shopping .stepList {
+  margin: 1.2em 0;
+  text-align: center;
+}
+/* line 2003, ../sass/style.scss */
+#shopping .stepList > div {
+  position: relative;
+  display: inline-block;
+  padding: 0 2.4em;
+}
+/* line 2007, ../sass/style.scss */
+#shopping .stepList > div::before {
+  position: absolute;
+  top: 15px;
+  right: -22px;
+  font-size: 2.4em;
+  color: #ffc53d;
+  opacity: 0.4;
+}
+@media (max-width: 1200px) {
+  /* line 2007, ../sass/style.scss */
+  #shopping .stepList > div::before {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  /* line 2018, ../sass/style.scss */
+  #shopping .stepList > div:not(:first-child) {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  /* line 2023, ../sass/style.scss */
+  #shopping .stepList > div:first-child {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+}
+/* line 2031, ../sass/style.scss */
+#shopping .stepList > div + * {
+  margin-left: 1.2em;
+}
+/* line 2034, ../sass/style.scss */
+#shopping .stepList > div > div {
+  display: inline-block;
+}
+/* line 2037, ../sass/style.scss */
+#shopping .stepList > div .img {
+  vertical-align: top;
+  margin-top: 0.2em;
+  margin-right: 0.4em;
+}
+/* line 2042, ../sass/style.scss */
+#shopping .stepList > div .text {
+  text-align: left;
+}
+/* line 2048, ../sass/style.scss */
 #shopping tfoot tr {
   border-top: 1px solid #ddd;
 }
-/* line 2003, ../sass/style.scss */
+/* line 2050, ../sass/style.scss */
 #shopping tfoot tr:first-child {
   border-top: 2px solid #ddd;
 }
-/* line 2006, ../sass/style.scss */
+/* line 2053, ../sass/style.scss */
 #shopping tfoot tr:nth-child(odd) {
   background-color: #f9f9f9;
 }
-/* line 2009, ../sass/style.scss */
+/* line 2056, ../sass/style.scss */
 #shopping tfoot tr td {
   border-top: 0;
 }
-/* line 2014, ../sass/style.scss */
+/* line 2061, ../sass/style.scss */
 #shopping tfoot .total td {
   font-size: 1.6em;
   opacity: 0.7;
+}
+/* line 2067, ../sass/style.scss */
+#shopping .btn-step {
+  margin-top: 2.4em;
+}
+/* line 2069, ../sass/style.scss */
+#shopping .btn-step .btn {
+  width: 250px;
+  font-size: 0.8em;
+  color: #fff;
+}
+@media (max-width: 992px) {
+  /* line 2069, ../sass/style.scss */
+  #shopping .btn-step .btn {
+    width: 100%;
+  }
+  /* line 2075, ../sass/style.scss */
+  #shopping .btn-step .btn + * {
+    margin-top: 0.6em;
+  }
+}
+/* line 2080, ../sass/style.scss */
+#shopping .btn-step .btn-prev {
+  background-color: #5db9ba;
+}
+/* line 2083, ../sass/style.scss */
+#shopping .btn-step .btn-next {
+  background-color: #ff8793;
 }
