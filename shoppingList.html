@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>最愛清單</title>
+    <title>購物清單</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -124,7 +124,7 @@
         </div>
     </header>
 
-    <section id="favorite" class="wow fadeInDown" data-wow-delay="0.2s">
+    <section id="shopping" class="wow fadeInDown" data-wow-delay="0.2s">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -135,78 +135,30 @@
                         <li>
                             會員專區
                         </li>
-                        <li class="active">最愛清單</li>
+                        <li class="active">購物清單</li>
                     </ol>
                     <div class="title">
-                        <div class="cn">最愛清單</div>
-                        <div class="eng">FAVORITES</div>
+                        <div class="cn">購物清單</div>
+                        <div class="eng">SHOPPING</div>
                     </div>
-                </div>
-                <div class="col-md-3 left">
-                    <div class="panel-group" id="accordionMenu" role="tablist" aria-multiselectable="true">
-                        <div class="panel panel-success">
-                            <div class="panel-heading" role="tab" id="headingOne" data-toggle="collapse" href="#collapseOne">
-                                <h4 class="panel-title icon-play3">
-                                    <a role="button" data-parent="#accordionMenu" aria-expanded="true" aria-controls="collapseOne">
-                                        會員專區
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                <div class="panel-body">
-                                    <ul class="nav">
-                                        <li>
-                                            <a href="personal.html">訊息管理中心</a>
-                                        </li>
-                                        <li>
-                                            <a href="memberalter.html">修改密碼/會員資料</a>
-                                        </li>
-                                        <li>
-                                            <a href="favorite.html" class="active">最愛清單</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-success">
-                            <div class="panel-heading" role="tab" id="headingTwo" data-toggle="collapse" href="#collapseTwo" data-parent="#accordionMenu">
-                                <h4 class="panel-title icon-play3">
-                                    <a class="collapsed" role="button" aria-expanded="false" aria-controls="collapseTwo">
-                                        會員權益
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                <div class="panel-body">
-                                    <ul class="nav">
-                                        <li>
-                                            <a href="account.html">購物須知</a>
-                                        </li>
-                                        <li>
-                                            <a href="rule.html">退換貨規則</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">常見問題</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">隱私權政策</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-9 right">
+
                     <div class="table-responsive">
                         <table class="table">
+                            <colgroup>
+                                <col width="15%">
+                                <col width="45%">
+                                <col width="12%">
+                                <col width="12%">
+                                <col width="8%">
+                                <col width="11%">
+                            </colgroup>
                             <thead>
                                 <tr>
                                     <td>產品縮圖</td>
                                     <td>品名</td>
-                                    <td>單價</td>
                                     <td>數量</td>
-                                    <td>加入購物車 </td>
+                                    <td>單價 </td>
+                                    <td>小計</td>
                                     <td>刪除</td>
                                 </tr>
                             </thead>
@@ -218,67 +170,80 @@
                                     <td>
                                         <a href="productitem.html">掀蓋柔花18包組(100抽)</a>
                                     </td>
+                                    <td>
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select>
+                                    </td>
                                     <td>$1,900 </td>
-                                    <td>
-                                        <select class="form-control">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                        </select>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-green" type="button">
-                                            加入購物車
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <i class="icon-bin"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="images/favorite_01.jpg" alt="" srcset="">
-                                    </td>
-                                    <td>
-                                        <a href="productitem.html">[福利品]溫感母乳抗菌袋 300ml</a>
-                                    </td>
-                                    <td>$120 </td>
-                                    <td></td>
-                                    <td>
-                                        <button class="btn btn-green" type="button">
-                                            補貨中
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <i class="icon-bin"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="images/favorite_02.jpg" alt="" srcset="">
-                                    </td>
-                                    <td>
-                                        <a href="productitem.html">Hug 頂級保濕組</a>
-                                    </td>
-                                    <td>$120 </td>
-                                    <td>
-                                        <select class="form-control">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                        </select>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-green" type="button">
-                                            加入購物車
-                                        </button>
-                                    </td>
+                                    <td>$1,900 </td>
                                     <td>
                                         <i class="icon-bin"></i>
                                     </td>
                                 </tr>
                             </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2"></td>
+                                    <td>共<span class="red">1</span>件</td>
+                                    <td>商品合計： </td>
+                                    <td>$100</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"></td>
+                                    <td>可折抵優惠代碼</td>
+                                    <td>
+                                        <input type="text" class="form-control" placeholder="輸入優惠代碼">
+                                    </td>
+                                    <td>-$0</td>
+                                    <td>
+                                        <a class="btn btn-green">使用</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"></td>
+                                    <td>
+                                        發票金額：
+                                    </td>
+                                    <td>$100</td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="text-right">
+                                        <a class="btn btn-green">台灣本島</a>
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-border-green">外島離島地區</a>
+                                    </td>
+                                    <td>
+                                        $100
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="total">
+                                    <td closapn="2"></td>
+                                    <td closapn="2" class="text-right">
+                                        TOTAL應付金額：
+                                    </td>
+                                    <td class="red">
+                                        $200
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
                         </table>
+                        <div class="text-center">
+                            <a>繼續購物</a>
+                            <a>下一步</a>
+                        </div>
                     </div>
                 </div>
             </div>
