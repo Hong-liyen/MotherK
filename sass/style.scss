@@ -93,14 +93,16 @@ html {
 }
 
 a,
-img,
 button {
-    transition: all 0.5s;
+    transition: all 0.3s linear;
     &:hover {
         opacity: 0.8;
     }
 }
-
+img{
+    transition: all 0.3s linear;
+    
+}
 a,
 a:hover {
     color: #666;
