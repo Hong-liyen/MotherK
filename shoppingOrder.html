@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>最新消息内容</title>
+    <title>購買清單/付款</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -124,7 +124,7 @@
         </div>
     </header>
 
-    <section id="eventitem" class="wow fadeInDown" data-wow-delay="0.2s">
+    <section id="shopping" class="wow fadeInDown" data-wow-delay="0.2s">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -133,69 +133,153 @@
                             <a href="index.html" class="icon-home3"></a>
                         </li>
                         <li>
-                            <a href="news.html">最新消息與活動</a>
+                            會員專區
                         </li>
-                        <li class="active">活動詳細內容</li>
+                        <li class="active">購物清單</li>
                     </ol>
-                </div>
-
-                <div class="col-md-9 left">
                     <div class="title">
-                        <div class="cn">與寶同行</div>
+                        <div class="cn">購物清單</div>
+                        <div class="eng">SHOPPING</div>
                     </div>
-                    <div class="img">
-                        <img src="images/news_item_01.jpg" alt="" srcset="" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-3 right">
-                    <div class="list">
-                        <div class="title">
-                            <div class="cn">
-                                <img src="images/news_icon.png" alt="" srcset="">
-                                <span>熱門活動</span>
+                    <div class="stepList">
+                        <div class="step icon-circle-right1">
+                            <div class="img">
+                                <img src="images/green_01.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h4>購買清單/付款</h4>
+                                <p>Check Order/Payment</p>
                             </div>
                         </div>
-                        <div class="item">
-                            <a href="">
-                                <div class="img">
-                                    <img src="images/sale_02.jpg" alt="" srcset="" class="img-responsive">
-                                </div>
-                                <div>【各國爸爸好禮購】</div>
-                            </a>
-
-                        </div>
-                        <div class="item">
-                            <a href="">
-                                <div class="img">
-                                    <img src="images/sale_05.jpg" alt="" srcset="" class="img-responsive">
-                                </div>
-                                <div>【曬出寶寶神睡姿-得獎名單】</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="list">
-                        <div class="title">
-                            <div class="cn">
-                                <img src="images/top_icon.png" alt="" srcset="">
-                                <span>熱門商品</span>
+                        <div class="step icon-circle-right1">
+                            <div class="img">
+                                <img src="images/gray_02.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h4>收件資訊</h4>
+                                <p>Information</p>
                             </div>
                         </div>
-                        <div class="item">
-                            <a href="">
-                                <div class="img">
-                                    <img src="images/sale_04.jpg" alt="" srcset="" class="img-responsive">
-                                </div>
-                                <div>【矽膠奶瓶刷/清潔刷/水壺刷/水杯刷2入組(椰子色)】</div>
-                            </a>
+                        <div class="step icon-circle-right1">
+                            <div class="img">
+                                <img src="images/gray_03.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h4>訂單確認</h4>
+                                <p>Order Check</p>
+                            </div>
                         </div>
-                        <div class="item">
-                            <a href="">
-                                <div class="img">
-                                    <img src="images/sale_01.png" alt="" srcset="" class="img-responsive">
-                                </div>
-                                <div>【奶粉抗菌儲存袋(90入)】</div>
-                            </a>
+                        <div class="step">
+                            <div class="img">
+                                <img src="images/gray_04.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h4>完成訂購</h4>
+                                <p>Order Compelete</p>
+                            </div>
                         </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <colgroup>
+                                <col width="15%">
+                                <col width="45%">
+                                <col width="12%">
+                                <col width="12%">
+                                <col width="8%">
+                                <col width="11%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <td>產品縮圖</td>
+                                    <td>品名</td>
+                                    <td>數量</td>
+                                    <td>單價 </td>
+                                    <td>小計</td>
+                                    <td>刪除</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="images/favorite_03.jpg" alt="" srcset="">
+                                    </td>
+                                    <td>
+                                        <a href="productitem.html">掀蓋柔花18包組(100抽)</a>
+                                    </td>
+                                    <td>
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select>
+                                    </td>
+                                    <td>$1,900 </td>
+                                    <td>$1,900 </td>
+                                    <td>
+                                        <i class="icon-bin"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2"></td>
+                                    <td>共<span class="red">1</span>件</td>
+                                    <td>商品合計： </td>
+                                    <td>$100</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"></td>
+                                    <td>可折抵優惠代碼</td>
+                                    <td>
+                                        <input type="text" class="form-control" placeholder="輸入優惠代碼">
+                                    </td>
+                                    <td>-$0</td>
+                                    <td>
+                                        <a class="btn btn-green">使用</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"></td>
+                                    <td>
+                                        發票金額：
+                                    </td>
+                                    <td>$100</td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="text-right">
+                                        <a class="btn btn-green">台灣本島</a>
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-border-green">外島離島地區</a>
+                                    </td>
+                                    <td>
+                                        $100
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr class="total">
+                                    <td></td>
+                                    <td class="text-right">
+                                        TOTAL應付金額：
+                                    </td>
+                                    <td class="red">
+                                        $200
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="btn-step text-center">
+                        <a href="product.html" class="btn btn-prev">繼續購物</a>
+                        <a href="shoppingInfo.html" class="btn btn-next">下一步</a>
                     </div>
                 </div>
             </div>
@@ -331,7 +415,6 @@
             <a data-toggle="modal" data-target="#account" class="icon-user">我的帳戶</a>
         </li>
     </div>
-
 </body>
 <script src="js/jquery-2.1.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

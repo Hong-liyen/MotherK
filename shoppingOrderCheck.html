@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>購物須知</title>
+    <title>訂單確認</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -124,7 +124,7 @@
         </div>
     </header>
 
-    <section id="account" class="wow fadeInDown" data-wow-delay="0.2s">
+    <section id="shopping" class="wow fadeInDown" data-wow-delay="0.2s">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -132,171 +132,203 @@
                         <li>
                             <a href="index.html" class="icon-home3"></a>
                         </li>
-                        <li>會員權益</li>
-                        <li class="active">購物須知</li>
+                        <li>
+                            會員專區
+                        </li>
+                        <li class="active">購物清單</li>
                     </ol>
-                </div>
-
-                <div class="col-md-3 left">
-                    <div class="panel-group" id="accordionMenu" role="tablist" aria-multiselectable="true">
-                        <div class="panel panel-success">
-                            <div class="panel-heading" role="tab" id="headingOne" data-toggle="collapse" href="#collapseOne">
-                                <h4 class="panel-title icon-play3">
-                                    <a role="button" data-parent="#accordionMenu" aria-expanded="true" aria-controls="collapseOne">
-                                        會員專區
-                                    </a>
-                                </h4>
+                    <div class="title">
+                        <div class="cn">購物清單</div>
+                        <div class="eng">SHOPPING</div>
+                    </div>
+                    <div class="stepList">
+                        <div class="step icon-circle-right1">
+                            <div class="img">
+                                <img src="images/gray_01.png" alt="">
                             </div>
-                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                                <div class="panel-body">
-                                    <ul class="nav">
-                                        <li>
-                                            <a href="personal.html">訊息管理中心</a>
-                                        </li>
-                                        <li>
-                                            <a href="memberalter.html">修改密碼/會員資料</a>
-                                        </li>
-                                        <li>
-                                            <a href="favorite.html">最愛清單</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <div class="text">
+                                <h4>購買清單/付款</h4>
+                                <p>Check Order/Payment</p>
                             </div>
                         </div>
-                        <div class="panel panel-success">
-                            <div class="panel-heading" role="tab" id="headingTwo" data-toggle="collapse" href="#collapseTwo" data-parent="#accordionMenu">
-                                <h4 class="panel-title icon-play3">
-                                    <a class="collapsed" role="button" aria-expanded="false" aria-controls="collapseTwo">
-                                        會員權益
-                                    </a>
-                                </h4>
+                        <div class="step icon-circle-right1">
+                            <div class="img">
+                                <img src="images/gray_02.png" alt="">
                             </div>
-                            <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
-                                <div class="panel-body">
-                                    <ul class="nav">
-                                        <li>
-                                            <a href="account.html" class="active">購物須知</a>
-                                        </li>
-                                        <li>
-                                            <a href="rule.html">退換貨規則</a>
-                                        </li>
-                                        <li>
-                                            <a href="question.html">常見問題</a>
-                                        </li>
-                                        <li>
-                                            <a href="privacy.html">隱私權政策</a>
-                                        </li>
-                                    </ul>
+                            <div class="text">
+                                <h4>收件資訊</h4>
+                                <p>Information</p>
+                            </div>
+                        </div>
+                        <div class="step icon-circle-right1">
+                            <div class="img">
+                                <img src="images/green_03.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h4>訂單確認</h4>
+                                <p>Order Check</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="img">
+                                <img src="images/gray_04.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h4>完成訂購</h4>
+                                <p>Order Compelete</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <colgroup>
+                                <col width="15%">
+                                <col width="45%">
+                                <col width="12%">
+                                <col width="12%">
+                                <col width="8%">
+                                <col width="11%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <td>產品縮圖</td>
+                                    <td>品名</td>
+                                    <td>數量</td>
+                                    <td>單價 </td>
+                                    <td>小計</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="images/favorite_03.jpg" alt="" srcset="">
+                                    </td>
+                                    <td>
+                                        <a href="productitem.html">掀蓋柔花18包組(100抽)</a>
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>$1,900 </td>
+                                    <td>$1,900 </td>
+
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td></td>
+                                    <td class="text-right">共
+                                        <span class="red">1</span>件</td>
+                                    <td> 一般會員 </td>
+                                    <td>商品合計： </td>
+                                    <td>$100</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        發票金額：
+                                    </td>
+                                    <td>$100</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>配送地區台灣本島
+                                    </td>
+                                    <td>
+                                        運費：
+                                    </td>
+                                    <td>$100</td>
+                                </tr>
+                                <tr class="total">
+                                    <td closapn="2"></td>
+                                    <td closapn="2" class="text-right">
+                                        TOTAL應付金額：
+                                    </td>
+                                    <td class="red">
+                                        $200
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="title">
+                        <div class="cn">收件人資訊</div>
+                        <div class="eng">Shipping information</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form>
+                                <div class="form-group">
+                                    <label>收件姓名</label>
+                                    <div>Amanda Hong</div>
+                                </div>
+                                <div class="form-group">
+                                    <label>手機號碼</label>
+                                    <div>0912-345678</div>
+                                </div>
+                                <div class="form-group">
+                                    <label>電子信箱</label>
+                                    <div>amanda770328@gmail.com</div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <form>
+                                <div class="form-group">
+                                    <label>地址</label>
+                                    <div>台中市太平區</div>
+                                </div>
+                                <div class="form-group">
+                                    <label>市話號碼</label>
+                                    <div>04-12345678</div>
+                                </div>
+                                <div class="form-group getInfo">
+                                    <label>配送時間</label>
+                                    <div>
+                                        皆可
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-12">
+                            <label>訂單備註</label>
+                            <div>請寄放管理室</div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <div class="cn">付款方式</div>
+                        <div class="eng">Payment</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group getInfo">
+                                <div>
+                                    線上刷卡
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-9 right">
-                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                        <div class="panel panel-blue" id="collapseOne_container">
-                            <div class="panel-heading" role="tab" id="headingThree" href="#collapseThree" data-toggle="collapse" data-parent="#accordion">
-                                <h4 class="panel-title icon-plus">
-                                    <a role="button" aria-expanded="true" aria-controls="collapseThree">
-                                        付款方式
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
-                                <div class="panel-body">
-                                    <p>提供線上刷卡及、貨到付款及四大超商繳費不取貨，共三種付款方式。</p>
-                                    <ol>
-                                        <li>使用貨到付款</li>
-                                        <li>使用信用卡付款</li>
-                                        <li>使用四大超商繳費</li>
-                                    </ol>
+                    <div class="title">
+                            <div class="cn">發票資訊</div>
+                            <div class="eng">Invoice</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group getInfo">
+                                    <div>
+                                        電子發票(兩聯式)
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="panel panel-blue" id="collapseTwo_Container">
-                            <div class="panel-heading" role="tab" id="headingFour" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                                <h4 class="panel-title icon-plus">
-                                    <a class="collapsed" role="button" aria-expanded="false" aria-controls="collapseFour">
-                                        運費
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                <div class="panel-body">
-                                    <p>台灣本島購物未滿1,000元則運費為100元，台灣外島地區運費為300元。</p>
-                                    <p>免運規則：台灣本島購物滿1,000元即享免運費優惠；台灣外島地區購買滿1,000元運費優惠為200元，享本島免運優惠金額。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-blue" id="collapseThree_Container">
-                            <div class="panel-heading" role="tab" id="headingFive" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
-                                <h4 class="panel-title icon-plus">
-                                    <a class="collapsed" role="button" aria-expanded="false" aria-controls="collapseFive">
-                                        配送
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                                <div class="panel-body">
-                                    <p>訂單完成且付款成功後，1~3個工作日內(不含例假日)將為您安排包裝出貨。</p>
-                                    <p>MOTHER-K配合之物流為黑貓宅急便，出貨後非偏遠地區5個工作日內即可收到貨品。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-blue" id="collapseThree_Container">
-                            <div class="panel-heading" role="tab" id="headingSix" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
-                                <h4 class="panel-title icon-plus">
-                                    <a class="collapsed" role="button" aria-expanded="false" aria-controls="collapseSix">
-                                        購物流程說明
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-                                <div class="panel-body">
-                                    <p>MOTHER-K提供您簡單又安全的購物流程，親切易懂的指引式流程畫面，讓您充分享受便利的購物樂趣。</p>
-                                    <p>
-                                        <u>第一次購物</u>：加入會員＞選擇商品＞加入購物車＞選擇運費及付款方式＞完成購物</p>
-                                    <p>
-                                        <u>非第一次購物</u>：選擇商品＞加入購物車＞輸入帳號密碼＞選擇結帳方式＞ 完成購物</p>
-                                    <p class="red">※ 提醒您，商品加入購物車但未結帳前，並無保留商品庫存功能，商品庫存分配將以結帳順序為依據。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-blue" id="collapseThree_Container">
-                            <div class="panel-heading" role="tab" id="headingSeven" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
-                                <h4 class="panel-title icon-plus">
-                                    <a class="collapsed" role="button" aria-expanded="false" aria-controls="collapseSeven">
-                                        生日禮領取
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
-                                <div class="panel-body">
-                                    <p>於加入會員後當月起，生日該月壽星即可至優惠券區領取可全館折抵使用之$50元優惠券，需於領取後30天內使用完畢</p>
-                                    <p>
-                                        如未於生日當月領取即不再進行補發。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-blue" id="collapseThree_Container">
-                            <div class="panel-heading" role="tab" id="headingEight" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
-                                <h4 class="panel-title icon-plus">
-                                    <a class="collapsed" role="button" aria-expanded="false" aria-controls="collapseEight">
-                                        紅利點數使用
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
-                                <div class="panel-body">
-                                    <ol>
-                                        <li>於購物車結帳第一步驟「 可折抵紅利 」文字處會顯示可使用之紅利點數，於右方欄位中輸入欲使用之點數後，再按下最後方「使用」按鈕即可使用。</li>
-                                        <li>所有紅利點數皆不可折抵物流費用以及貨到付款手續費。</li>
-                                        <li>如訂單為信用卡付款失敗，紅利點數將於15分鐘後退回至會員帳戶；如為個人因素連繫客服取消，紅利將於客服人員確認完成退貨流程後，於訂單系統修正訂單狀態後退回至會員帳戶。</li>
-                                    </ol>
-                                    <p class="red">※ 登入會員中心即可查詢您的紅利點數詳細資訊。</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="btn-step text-center">
+                        <a href="shoppingInfo.html" class="btn btn-prev">上一步</a>
+                        <a href="shoppingCompelete.html" class="btn btn-next">完成訂購</a>
                     </div>
                 </div>
             </div>
@@ -306,9 +338,9 @@
         <div class="container">
             <div class="top">
                 <a href="account.html">購物須知</a>
-                <a href="">退換貨規則</a>
-                <a href="">常見問題</a>
-                <a href="">隱私權政策</a>
+                <a href="rule.html">退換貨規則</a>
+                <a href="question.html">常見問題</a>
+                <a href="privacy.html">隱私權政策</a>
             </div>
             <div class="center">
                 <div class="left">SERVICE</div>
@@ -432,12 +464,12 @@
             <a data-toggle="modal" data-target="#account" class="icon-user">我的帳戶</a>
         </li>
     </div>
-
 </body>
 <script src="js/jquery-2.1.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/slick.js" type="text/javascript"></script>
 <script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/jquery.twzipcode.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/script.js"></script>
 
