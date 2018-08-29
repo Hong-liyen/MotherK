@@ -195,8 +195,10 @@ body.sticky-header {
         }
         .line {
             position: relative;
+            z-index: 99;
             &:hover {
                 transition: all 0.5s;
+                opacity: 1;
                 span {
                     display: block;
                 }
@@ -1266,9 +1268,9 @@ body.sticky-header {
         }
     }
     .getInfo {
-        p{
+        p {
             margin: 10px 0 10px;
-            span{
+            span {
                 padding-right: 0.4em;
             }
         }
@@ -1745,6 +1747,15 @@ body.sticky-header {
                 border-top: 0;
             }
         }
+    }
+    .count {
+        display: inline-block;
+        float: right;
+        font-weight: bold;
+    }
+    .countBelow {
+        color: #ff0000;
+        font-weight: bold;
     }
 }
 

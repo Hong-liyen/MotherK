@@ -11,6 +11,23 @@ $(window).scroll(function() {
     }
 });
 
+// count
+var countMax = 100,
+    countThis = $('.inputCount');
+
+countThis.find('.count').text(countMax);
+
+countThis.find('textarea').on('keydown keyup keypress change', function() {
+    var thisValueLength = $(this).val().length,
+        countDown = countMax - thisValueLength;
+    countThis.find('.count').text(countDown);
+    if (countDown < 0) {
+        countThis.find('.count').addClass('countBelow');
+    } else {
+        countThis.find('.count').removeClass('countBelow');
+    }
+});
+
 // slick輪播
 
 $(".regular").slick({
@@ -30,8 +47,6 @@ $(".video").slick({
     responsive: [{
         breakpoint: 768,
         settings: {
-            centerMode: true,
-            centerPadding: '40px',
             slidesToShow: 1,
             slidesToScroll: 1,
         }
@@ -47,8 +62,6 @@ $(".share").slick({
     responsive: [{
         breakpoint: 768,
         settings: {
-            centerMode: true,
-            centerPadding: '40px',
             slidesToShow: 1,
             slidesToScroll: 1,
         }
