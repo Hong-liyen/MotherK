@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首頁</title>
-    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/slick.css">
@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal fade" id="dialogLogin" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -27,23 +27,23 @@
                     <form>
                         <div class="form-group">
                             <label>信箱</label>
-                            <input class="form-control" data-toggle="tooltip" title="請輸入信箱" placeholder="請輸入信箱">
+                            <input class="form-control" placeholder="請輸入信箱">
                         </div>
                         <div class="form-group">
                             <label>訂單編號</label>
-                            <input class="form-control" data-toggle="tooltip" title="請輸入訂單編號" placeholder="請輸入訂單編號">
+                            <input class="form-control" placeholder="請輸入訂單編號">
                         </div>
                         <div class="form-group imgcode">
                             <label>驗證碼</label>
                             <div>
-                                <input class="form-control" data-toggle="tooltip" title="請輸入驗證碼" placeholder="請輸入驗證碼">
-                                <img src="images/imgcode.png" alt="" srcset="">
+                                <input class="form-control" placeholder="請輸入驗證碼">
+                                <img src="images/imgcode.png" alt="請輸入驗證碼">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="check">
-                                <label class="form-check-label" for="check">
+                                <input class="form-check-input" type="checkbox" value="" id="checkLogin">
+                                <label class="form-check-label" for="checkLogin">
                                     記住登入資訊
                                 </label>
                             </div>
@@ -59,28 +59,27 @@
     <header id="header" class="wow fadeIn">
         <div class="container">
             <div class="top">
-                <a href="" data-toggle="modal" data-target="#myModal">登入</a>
+                <a href="" data-toggle="modal" data-target="#dialogLogin">登入</a>
                 <a href="memberjoin.html">加入會員</a>
                 <a href="" class="line">
-                    <img src="images/line.png" alt="" srcset="">
+                    <img src="images/line.png" alt="">
                     <span>
-                    <img src="images/line_mk.jpg" alt="" srcset="">
-                </span>
+                        <img src="images/line_mk.jpg" alt="">
+                    </span>
                 </a>
                 <a href="http://www.motherk.co.kr/company/intro.html">
-                    <img src="images/korea.png" alt="" srcset="">
+                    <img src="images/korea.png" alt="">
                 </a>
             </div>
             <div class="logo">
                 <a href="index.html">
-                    <img src="images/logo.png" alt="" srcset="">
+                    <img src="images/logo.png" alt="">
                 </a>
             </div>
         </div>
-
-        <div class="menu">
+        <div class="nav">
             <div class="container">
-                <div class="left">
+                <div class="menu">
                     <div class="icon-menu">
                         <div class="list">
                             <a href="news.html">最新消息與活動</a>
@@ -90,9 +89,8 @@
                             <a href="contact.html">聯絡我們</a>
                         </div>
                     </div>
-
                 </div>
-                <div class="right">
+                <div class="search-list">
                     <div class="cart">
                         <div class="icon-cart">
                             <span>1</span>
@@ -102,7 +100,7 @@
                             <table>
                                 <tr>
                                     <td>
-                                        <img src="images/favorite_01.jpg" alt="" srcset="">
+                                        <img src="images/favorite_01.jpg" alt="">
                                     </td>
                                     <td>28包組 掀蓋柔花款</td>
                                     <td>1X</td>
@@ -155,12 +153,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="images/index_slide_01.jpg" alt="" srcset="" class="img-responsive">
+                    <img src="images/index_slide_01.jpg" alt="" class="img-responsive">
                 </div>
                 <div class="col-md-6 youtube">
-                    <img src="images/youtube.jpg" alt="" srcset="" class="img-responsive">
-                    <div class="arrow">
-                        <a href="https://www.youtube.com/watch?v=OSwbDQSymHA">▶</a>
+                    <img src="images/youtube.jpg" alt="" class="img-responsive">
+                    <div class="arrow" id="js-startbtn"> ▶
+                    </div>
+                    <div class="modal is-hide">
+                        <iframe width="80%" height="80%" src="https://www.youtube.com/embed/IFTZtuXKzFs" frameborder="0"
+                            allowfullscreen></iframe>
+                        <a class="modal-close js-modal-close">X</a>
                     </div>
                 </div>
             </div>
@@ -170,17 +172,15 @@
     <section id="fun" class="wow fadeInDown" data-wow-delay="0.6s">
         <div class="container">
             <div class="info">
-                <div>EASY簡單育兒，FUN有趣育兒</div>
-                <div>媽咪們的苦惱交給 MOTHER-K來解決吧！</div>
+                <div class="title">EASY簡單育兒，FUN有趣育兒</div>
+                <p>媽咪們的苦惱交給 MOTHER-K來解決吧！</p>
             </div>
         </div>
     </section>
     <section id="news" class="wow fadeInDown" data-wow-delay="0.6s">
         <div class="container">
-            <div class="title">
-                <div>
-                    <img src="images/news_icon.png" alt="" srcset="">
-                </div>
+            <div class="icon-title">
+                <img src="images/news_icon.png" alt="">
                 <div class="cn">最新消息與活動</div>
                 <div class="eng">NEWS&EVENT</div>
             </div>
@@ -188,17 +188,17 @@
                 <div class="row">
                     <div class="left col-md-5">
                         <div class="img">
-                            <img src="images/news_index_01.jpg" alt="" srcset="" class="img-responsive">
+                            <img src="images/news_index_01.jpg" alt="" class="img-responsive">
                         </div>
 
                     </div>
                     <div class="right col-md-7">
                         <div class="img">
-                            <img src="images/news_index_02.jpg" alt="" srcset="" class="img-responsive">
+                            <img src="images/news_index_02.jpg" alt="" class="img-responsive">
                         </div>
 
                         <div class="img">
-                            <img src="images/news_index_03.jpg" alt="" srcset="" class="img-responsive">
+                            <img src="images/news_index_03.jpg" alt="" class="img-responsive">
                         </div>
 
                     </div>
@@ -210,9 +210,9 @@
     <section id="child" class="wow fadeInDown" data-wow-delay="0.8s">
         <div class="container">
             <div class="info">
-                <div>為了媽咪們的需求 創造新的概念</div>
-                <div>MOTHER-K致力於生產媽咪們值得信賴的育兒用品</div>
-                <div>為媽咪及寶貝們的安全健康嚴格把關</div>
+                <div class="title">為了媽咪們的需求 創造新的概念</div>
+                <p>MOTHER-K致力於生產媽咪們值得信賴的育兒用品</p>
+                <p>為媽咪及寶貝們的安全健康嚴格把關</p>
 
             </div>
         </div>
@@ -220,18 +220,15 @@
 
     <section id="sale" class="wow fadeInDown" data-wow-delay="0.8s">
         <div class="container">
-            <div class="title">
-                <div>
-                    <img src="images/top_icon.png" alt="" srcset="">
-
-                </div>
+            <div class="icon-title">
+                <img src="images/top_icon.png" alt="">
                 <div class="cn">熱銷商品</div>
                 <div class="eng">HOT SALE</div>
             </div>
             <div class="info">
                 <div class="n5">
                     <div class="cover">
-                        <img src="images/sale_01.png" alt="" srcset="" class="img-responsive">
+                        <img src="images/sale_01.png" alt="" class="img-responsive">
                         <div class="icon">
                             <div class="icon-heart"></div>
                             <div class="icon-cart"></div>
@@ -247,7 +244,7 @@
                 </div>
                 <div class="n5">
                     <div class="cover">
-                        <img src="images/sale_02.jpg" alt="" srcset="" class="img-responsive">
+                        <img src="images/sale_02.jpg" alt="" class="img-responsive">
                         <div class="icon">
                             <div class="icon-heart"></div>
                             <div class="icon-cart"></div>
@@ -263,7 +260,7 @@
                 </div>
                 <div class="n5">
                     <div class="cover">
-                        <img src="images/sale_03.jpg" alt="" srcset="" class="img-responsive">
+                        <img src="images/sale_03.jpg" alt="" class="img-responsive">
                         <div class="icon">
                             <div class="icon-heart"></div>
                             <div class="icon-cart"></div>
@@ -279,7 +276,7 @@
                 </div>
                 <div class="n5">
                     <div class="cover">
-                        <img src="images/sale_04.jpg" alt="" srcset="" class="img-responsive">
+                        <img src="images/sale_04.jpg" alt="" class="img-responsive">
                         <div class="icon">
                             <div class="icon-heart"></div>
                             <div class="icon-cart"></div>
@@ -295,7 +292,7 @@
                 </div>
                 <div class="n5">
                     <div class="cover">
-                        <img src="images/sale_05.jpg" alt="" srcset="" class="img-responsive">
+                        <img src="images/sale_05.jpg" alt="" class="img-responsive">
                         <div class="icon">
                             <div class="icon-heart"></div>
                             <div class="icon-cart"></div>
@@ -311,7 +308,7 @@
                 </div>
                 <div class="n5">
                     <div class="cover">
-                        <img src="images/sale_06.jpg" alt="" srcset="" class="img-responsive">
+                        <img src="images/sale_06.jpg" alt="" class="img-responsive">
                         <div class="icon">
                             <div class="icon-heart"></div>
                             <div class="icon-cart"></div>
@@ -327,7 +324,7 @@
                 </div>
                 <div class="n5">
                     <div class="cover">
-                        <img src="images/sale_07.jpg" alt="" srcset="" class="img-responsive">
+                        <img src="images/sale_07.jpg" alt="" class="img-responsive">
                         <div class="icon">
                             <div class="icon-heart"></div>
                             <div class="icon-cart"></div>
@@ -343,7 +340,7 @@
                 </div>
                 <div class="n5">
                     <div class="cover">
-                        <img src="images/sale_08.jpg" alt="" srcset="" class="img-responsive">
+                        <img src="images/sale_08.jpg" alt="" class="img-responsive">
                         <div class="icon">
                             <div class="icon-heart"></div>
                             <div class="icon-cart"></div>
@@ -369,7 +366,7 @@
                 <a href="question.html">常見問題</a>
                 <a href="privacy.html">隱私權政策</a>
             </div>
-            <div class="center">
+            <div class="middle">
                 <div class="left">SERVICE</div>
                 <div class="right">
                     <div>
@@ -442,18 +439,12 @@
                         </p>
                         <p>service＠motherk.com.tw</p>
                         <div class="button-group">
-                            <div>
-                                <a href="" class="btn btn-green">客服專線</a>
-                                <a href="contact.html" class="btn btn-green">聯絡我們</a>
-                            </div>
-                            <div>
-                                <a href="account.html" class="btn btn-primary">購物須知</a>
-                                <a href="rule.html" class="btn btn-primary">退換貨規則</a>
-                            </div>
-                            <div>
-                                <a href="question.html" class="btn btn-primary">常見問題</a>
-                                <a href="privacy.html" class="btn btn-primary">隱私權政策</a>
-                            </div>
+                            <a href="" class="btn btn-green">客服專線</a>
+                            <a href="contact.html" class="btn btn-green">聯絡我們</a>
+                            <a href="account.html" class="btn btn-primary">購物須知</a>
+                            <a href="rule.html" class="btn btn-primary">退換貨規則</a>
+                            <a href="question.html" class="btn btn-primary">常見問題</a>
+                            <a href="privacy.html" class="btn btn-primary">隱私權政策</a>
                         </div>
                     </div>
                 </div>
@@ -470,10 +461,8 @@
                 <div class="modal-body">
                     <div class="text-center">
                         <div class="button-group">
-                            <div>
-                                <a href="memberjoin.html" class="btn btn-green">加入會員</a>
-                                <a href="" class="btn btn-green">會員登入</a>
-                            </div>
+                            <a href="memberjoin.html" class="btn btn-green">加入會員</a>
+                            <a href="" class="btn btn-green">會員登入</a>
                         </div>
                     </div>
                 </div>
@@ -482,7 +471,7 @@
     </div>
     <div class="member-bottom">
         <li class="shopping">
-            <a href="shoppingList.html" class="icon-cart">購物清單</a>
+            <a href="shoppingOrder.html" class="icon-cart">購物清單</a>
         </li>
         <li class="servive">
             <a data-toggle="modal" data-target="#servive" class="icon-alarm">服務資訊</a>
