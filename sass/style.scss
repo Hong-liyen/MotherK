@@ -211,10 +211,10 @@ body.sticky-header {
 
         .line {
             position: relative;
-
+            z-index: 99;
             &:hover {
                 transition: all 0.5s;
-
+                opacity: 1;
                 span {
                     display: block;
                 }
@@ -1416,13 +1416,11 @@ body.sticky-header {
     .getInfo {
         p {
             margin: 10px 0 10px;
-
             span {
                 padding-right: 0.4em;
             }
         }
-
-        > div {
+        >div {
             button {
                 @include breakpoint(sm) {
                     width: 100%;
@@ -1925,6 +1923,15 @@ body.sticky-header {
             }
         }
     }
+    .count {
+        display: inline-block;
+        float: right;
+        font-weight: bold;
+    }
+    .countBelow {
+        color: #ff0000;
+        font-weight: bold;
+    }
 }
 
 #memberjoin {
@@ -2244,12 +2251,10 @@ body.sticky-header {
                 font-size: 2.4em;
                 color: #ffc53d;
                 opacity: 0.4;
-
                 @include breakpoint(lg) {
                     display: none;
                 }
             }
-
             &:not(:first-child) {
                 @include breakpoint(lg) {
                     display: none;
@@ -2305,25 +2310,340 @@ body.sticky-header {
             width: 250px;
             font-size: 1.2em;
             color: #fff;
-
-            + * {
+            +* {
                 margin-left: 0.6em;
             }
-
             @include breakpoint(md) {
                 width: 100%;
-
-                + * {
+                +* {
                     margin-top: 0.6em;
                     margin-left: 0;
                 }
             }
         }
-
         .btn-prev {
-            background-color: darken($primary, 15%);
+            background-color: darken($mainColor, 15%);
         }
+        .btn-next {
+            background-color: #ff8793;
+        }
+    }
+    .imgcode {
+        >div {
+            * {
+                display: inline-block;
+                width: 50%;
+            }
+            img {
+                height: 2em;
+                width: auto;
+            }
+        }
+    }
+    .form-info {
+        margin-top: 2em;
+    }
+}
 
+#memberjoin {
+    .date,
+    .address {
+        .form-control {
+            width: calc((100% - 0.4em*2) / 3);
+            @include breakpoint(sm) {
+                width: 100%;
+            }
+            +* {
+                @include breakpoint(sm) {
+                    margin-top: 1.2em;
+                }
+            }
+        }
+    }
+    .address {
+        >.form-control {
+            margin-top: 1.2em;
+            width: 100%;
+        }
+    }
+    .getInfo {
+        >.form-control {
+            margin-top: 1.2em;
+        }
+    }
+    .form-info {
+        margin-top: 2em;
+    }
+}
+
+.imgcode {
+    >div {
+        * {
+            display: inline-block;
+            width: 50%;
+        }
+        img {
+            height: 2em;
+            width: auto;
+        }
+    }
+}
+
+.social {
+    position: fixed;
+    top: 30%;
+    right: 0;
+    z-index: 2;
+    @include breakpoint(md) {
+        display: none;
+    }
+    ul {
+        text-align: center;
+        li {
+            cursor: pointer;
+            list-style: none;
+            width: 3em;
+            height: 3em;
+            line-height: 3em;
+            color: #fff;
+            font-size: 1.2em;
+            +* {
+                margin-top: 0.6em;
+            }
+        }
+        .icon-facebook:before {
+            font-size: 1.4em;
+        }
+        .icon-mail4:before {
+            font-size: 1.4em;
+        }
+        .icon-heart:before {
+            font-size: 1.2em;
+        }
+    }
+}
+
+.modal {
+    .modal-header {
+        text-align: center;
+        background-color: #93D0D1;
+        color: #fff;
+        overflow: hidden;
+        font-weight: bold;
+        border-radius: 6px 6px 0 0;
+        .close {
+            margin-top: -5px;
+            color: darken($mainColor, 80%);
+            font-size: 2.2em;
+        }
+    }
+    .modal-content {
+        border: 0;
+    }
+    .form-group {
+        .form-check {
+            text-align: center;
+        }
+        .form-check-label {
+            cursor: pointer;
+            text-align: center;
+        }
+    }
+}
+
+#twzipcode {
+    select,
+    input {
+        width: calc((100% - 0.4em*2) / 3);
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.428571429;
+        color: #555;
+        vertical-align: middle;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        @include breakpoint(xs) {
+            width: 100%;
+        }
+    }
+    >* {
+        +* {
+            margin-left: 0.4em;
+            @include breakpoint(xs) {
+                margin-left: 0;
+                margin-top: 1.2em;
+            }
+        }
+    }
+}
+
+#favorite,
+#shopping,
+#personal {
+    .table {
+        text-align: center;
+        thead {
+            background-color: lighten(#57a1d9, 15%);
+            color: #fff;
+            border-radius: 6px 6px 0 0;
+            overflow: hidden;
+        }
+        tbody {
+            tr {
+                &:nth-child(odd) {
+                    background-color: #f9f9f9;
+                }
+                td {
+                    +* {
+                        border-left: 1px dashed #929292;
+                    }
+                    i {
+                        color: #EA697F;
+                        font-size: 1.2em;
+                        cursor: pointer;
+                    }
+                }
+                td:nth-child(2) {
+                    text-align: left;
+                    font-size: 1.2em;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.member-bottom {
+    display: none;
+    @include breakpoint(md) {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: block;
+        z-index: 2;
+    }
+    li {
+        padding: 0.8em 0;
+        font-size: 1em;
+        color: #fff;
+        text-align: center;
+        display: inline-block;
+        float: left;
+        width: calc(100% / 3);
+        cursor: pointer;
+        a {
+            &:before {
+                margin-right: 0.6em;
+            }
+        }
+        a,
+        a:hover {
+            color: #fff;
+        }
+    }
+    li.shopping {
+        background-color: #ec9cc1;
+    }
+    li.servive {
+        background-color: #8dd1e8;
+    }
+    li.account {
+        background-color: #89cbb0;
+    }
+}
+
+#shopping {
+    .stepList {
+        margin: 1.2em 0;
+        text-align: center;
+        >div {
+            position: relative;
+            display: inline-block;
+            padding: 0 2.4em;
+            &::before {
+                position: absolute;
+                top: 15px;
+                right: -22px;
+                font-size: 2.4em;
+                color: #ffc53d;
+                opacity: 0.4;
+                @include breakpoint(lg) {
+                    display: none;
+                }
+            }
+            &:not(:first-child) {
+                @include breakpoint(lg) {
+                    display: none;
+                }
+            }
+            &:first-child {
+                @include breakpoint(lg) {
+                    display: inline-block;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            +* {
+                margin-left: 1.2em;
+            }
+            >div {
+                display: inline-block;
+            }
+            .img {
+                vertical-align: top;
+                margin-top: 0.2em;
+                margin-right: 0.4em;
+            }
+            .text {
+                text-align: left;
+            }
+        }
+    }
+    tfoot {
+        tr {
+            border-top: 1px solid #ddd;
+            &:first-child {
+                border-top: 2px solid #ddd;
+            }
+            &:nth-child(odd) {
+                background-color: #f9f9f9;
+            }
+            td {
+                border-top: 0;
+            }
+        }
+        .total {
+            td {
+                font-size: 1.6em;
+                opacity: 0.7;
+            }
+        }
+    }
+    .btn-step {
+        margin-top: 2.4em;
+        .btn {
+            width: 250px;
+            font-size: 1.2em;
+            color: #fff;
+            +* {
+                margin-left: 0.6em;
+            }
+            @include breakpoint(md) {
+                width: 100%;
+                +* {
+                    margin-top: 0.6em;
+                    margin-left: 0;
+                }
+            }
+        }
+        .btn-prev {
+            background-color: darken($mainColor, 15%);
+        }
         .btn-next {
             background-color: #ff8793;
         }
