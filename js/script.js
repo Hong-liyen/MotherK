@@ -1,5 +1,20 @@
+
+
+$(function(){
+    var $modal = $('.modal');
+    var HIDE_CLASS = 'is-hide';
+
+    $('#js-startbtn').on('click', function(){
+        $modal.removeClass(HIDE_CLASS);
+    });
+    $('#js-startbtn').on('click', function(){
+        $modal.addClass(HIDE_CLASS);
+    });
+});
+
 // wow
 new WOW().init();
+
 
 // sticky-header
 $(window).scroll(function() {
@@ -123,3 +138,4 @@ $('#twzipcode').twzipcode({
     zipcodeSel: 114,
     readonly: false
 });
+
